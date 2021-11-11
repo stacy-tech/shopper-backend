@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_11_11_035329) do
     t.string "title"
     t.string "image_url"
     t.string "description"
-    t.string "price"
+    t.integer "price"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
