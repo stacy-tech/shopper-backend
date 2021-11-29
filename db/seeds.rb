@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+
+stacy = User.create(first_name: 'stacy', last_name: 'm', username: 'stace')
+stacy.password = 'guest'
+
+
 product1 = Product.create(title: "Fjallraven - Foldsack Backpack", image_url: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg", description: "Your perfect pack for everyday use. Stash your laptop(up to 15 inches) in the padded sleeve.", price: 100)
 product2 = Product.create(title: "Mens Casual Premium Slim Fit T-Shirt", image_url: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg", description: "Three-button, Slim-fitting style.", price: 25)
 product3 = Product.create(title: "Women's Removable Hooded Faux Leather Jacket", image_url: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg", description: "Faux leather material. HAND WASH ONLY / DO NOT BLEACH", price: 75)
