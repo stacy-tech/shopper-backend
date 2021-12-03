@@ -22,3 +22,5 @@ product7 = Product.create(title: "Solid Gold Petite Micrapave", image_url: "http
 product8 = Product.create(title: "Opna Women's Short Sleeve", image_url: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg", description: "100% Polyester, Soft Lightweight Fabric", price: 20)
 product9 = Product.create(title: "Women Windbreaker", image_url: "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg", description: "Lightweight perfect for casual wear. Lined Hood with Adjustable Drawstrings give it a real style look.", price: 100)
 product10 = Product.create(title: "Unisex Converse Sneakers", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl2vkK-1cxlqrPV-oXuObTdmGPncpXxFKmEQ&usqp=CAU", description: "Chuck Taylor All Star", price: 65)
+
+Transaction.create(user: stacy, product: product3)
