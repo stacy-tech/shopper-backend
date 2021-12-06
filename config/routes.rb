@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :transactions
+  resources :transactions, only: [:create]
   resources :users, only: [:create]
   resources :products, only: [:index, :show]
   resources :sessions, only: [:create]

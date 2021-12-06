@@ -1,5 +1,10 @@
 class TransactionSerializer < ActiveModel::Serializer
-  attributes :id, :product
-  has_one :user
-  has_one :product
+  attributes :id, :product, :username
+
+  def username
+    self.object.user.username
+  end
+
+ 
+
 end
