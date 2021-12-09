@@ -13,13 +13,14 @@ class TransactionsController < ApplicationController
 
 
     def create
-        transaction = Transaction.create(transaction_params)
+        
+        transaction = Transaction.create(user_id:logged_in_user.id, product_id:transaction_params[:product_id].to_i)
         render json: transaction
     end
 
     private
 
     def transaction_params
-        params.permit(:id, :product)
+        params.permit(:user_id, :product_id)
     end
 end

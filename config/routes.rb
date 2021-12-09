@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :transactions, only: [:create]
-  resources :users, only: [:create]
+  resources :users, only: [:create, :show]
   resources :products, only: [:index, :show]
   resources :sessions, only: [:create]
   get "/me", to: 'sessions#autologin'
