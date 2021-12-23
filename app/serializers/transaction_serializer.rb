@@ -5,6 +5,4 @@ class TransactionSerializer < ActiveModel::Serializer
     self.object.user.username
   end
 
- 
-
 end
